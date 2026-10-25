@@ -33,6 +33,10 @@ a{
     margin: 5px;
 }
 
+div.container{
+    margin-top: -600px;
+}
+
 #button-car{
     padding: 3px;
     border-radius: 20px;
@@ -51,7 +55,7 @@ a{
     border-radius: 5px;
     border: none;
     color: var(--cor-quartiaria);
-    box-shadow: 0 10px 20px -3px rgba(249, 115, 22, 0.5);
+    box-shadow: 0 15px 30px -3px rgba(249, 115, 22, 0.8);
     transition: all 0.3s ease-in-out;
 }
 
@@ -60,6 +64,20 @@ a{
     color: var(--cor-quartiaria);
     transform: scale(1.05);
     box-shadow: 0 15px 25px -3px rgba(249, 115, 22, 0.8);
+}
+
+#inicio{
+    border: solid red 5px;
+}
+
+#hamburguer-mais-vendido{
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburguer-mais-vendido:hover{
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px -3px rgba(249, 115, 22, 0.8);
 }
 
 @media (min-width: 992px) {
