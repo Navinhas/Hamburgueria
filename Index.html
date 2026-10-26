@@ -14,7 +14,7 @@
 <body>
   <nav class="navbar md:navbar-expand bg-1 border-bottom">
     <div class="container-fluid">
-      <i data-lucide="hamburger"></i>
+      <i data-lucide="hamburger" id="hamburger"></i>
       <a class="navbar-brand" href="#">Hamburgueria</a>
       <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer"
         aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,16 +71,25 @@
     </div>
   </section>
 
-    <section class="d-flex justify-content-center align-items-center bg-dark text-white">
-    <div class="container text-center" >
+  <section class="d-flex justify-content-center align-items-center bg-dark text-white">
+    <div class="container text-center">
       <img src="img/hamburguer-mais-vendido.jpeg" alt="hamburger" id="hamburguer-mais-vendido">
 
-      <div class="card" id="card-mais-vendido">
-        <i data-lucide="flame"></i>
+      <div class="card d-flex align-items-center bg-dark-subtle" id="card-mais-vendido">
+        <i data-lucide="flame" id="fogo" class="p-2"></i>
+        <div id="grupo-textos" class="d-flex flex-column justify-content-center">
+          <p class="fg-2 mb-0">Mais Vendido</p>
+          <p class="text-1xs mb-0">Baicon xl</p>
+        </div>
       </div>
 
-      <div class="card" id="card-tempo-estimado">
-        <i data-lucide="clock"></i>
+      <div class="card d-flex align-items-center bg-dark" id="card-tempo-estimado">
+        <i data-lucide="clock" id="relogio" class="p-2"></i>
+        <div id="grupo-textos" class="d-flex flex-column justify-content-center">
+          <p class="text-nowrap fg-2 mb-0">Tempo estimado</p>
+          <p class="mb-0">40 - 50 min</p>
+        </div>
+
       </div>
     </div>
   </section>

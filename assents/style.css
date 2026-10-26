@@ -23,28 +23,33 @@ body {
 }
 
 nav {
+    background: rgba(30, 30, 30, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
     border-radius: 5px;
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
 }
 
-a{
+a {
     margin: 5px;
 }
 
-div.container{
+div.container {
     margin-top: -600px;
 }
 
-#button-car{
+#button-car {
     padding: 3px;
     border-radius: 20px;
     border: solid var(--cor-sextaria) 2px;
     transition: all 0.3s;
 }
 
-#button-car:hover{
+#button-car:hover {
     border: solid var(--cor-segundaria) 2px;
     transform: scale(1.05);
 }
@@ -66,18 +71,64 @@ div.container{
     box-shadow: 0 15px 25px -3px rgba(249, 115, 22, 0.8);
 }
 
-#inicio{
+#inicio {
     border: solid red 5px;
 }
 
-#hamburguer-mais-vendido{
+#hamburguer-mais-vendido {
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 }
 
-#hamburguer-mais-vendido:hover{
+#hamburguer-mais-vendido:hover {
     transform: scale(1.05);
     box-shadow: 0 15px 30px -3px rgba(249, 115, 22, 0.8);
+}
+
+#card-mais-vendido {
+    background: rgba(30, 30, 30, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    width: 160px;
+    flex-direction: row;
+    gap: 8px;
+    padding: 8px;
+
+    position: absolute;
+    top: 512px;
+    left: 207px;
+}
+
+#card-tempo-estimado {
+    background: rgba(30, 30, 30, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    height: 80px;
+    width: 170px;
+    flex-direction: row;
+    gap: 8px;
+    padding: 8px;
+
+    position: absolute;
+    top: 850px;
+    left: 549px;
+}
+
+#fogo {
+    color: #dc2626;
+}
+
+#relogio {
+    color: #f59e0b;
+    flex-shrink: 0;
+}
+
+#hamburger {
+    color: #d97706;
 }
 
 @media (min-width: 992px) {
